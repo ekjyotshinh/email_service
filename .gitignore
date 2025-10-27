@@ -1,0 +1,11 @@
+# Binaries
+email-service
+
+# Environment variables
+.env
+
+# IDE settings
+.vscode/
+
+# macOS specific
+.DS_Store

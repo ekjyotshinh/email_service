@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS emails (
+    id SERIAL PRIMARY KEY,
+    "to" TEXT NOT NULL,
+    subject TEXT NOT NULL,
+    body TEXT NOT NULL,
+    status TEXT NOT NULL,
+    retry_count INTEGER NOT NULL DEFAULT 0,
+    send_time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
