@@ -33,3 +33,12 @@ func GetEmails(c *gin.Context) {
 	}
 	c.JSON(http.StatusOK, emails)
 }
+
+func HealthCheck(c *gin.Context) {
+	err := db.DB.Ping()
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"status": "unhealthy"})
+		return
+	}
+	c.JSON(http.StatusOK, gin.H{"status": "healthy"})
+}

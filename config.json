@@ -1,0 +1,16 @@
+{
+    "db_host": "localhost",
+    "db_user": "user",
+    "db_pass": "password",
+    "db_name": "email_service",
+    "smtp_host": "smtp.example.com",
+    "smtp_port": 587,
+    "smtp_username": "user@example.com",
+    "smtp_password": "password",
+    "pool_interval": 5,
+    "max_workers": 5,
+    "max_retries": 3,
+    "base_backoff_time": 60,
+    "processing_timeout": 300,
+    "stuck_processing_check": 900
+}
